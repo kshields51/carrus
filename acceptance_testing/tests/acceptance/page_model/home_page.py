@@ -1,13 +1,9 @@
 from acceptance_testing.tests.acceptance.locators.home_page import HomePageLocators
-
-class HomePage:
-    def __init__(self, driver):
-        self.driver = driver
+from acceptance_testing.tests.acceptance.page_model.base_page import BasePage
 
 
-    @property
-    def url(self):
-        return 'https://www.carruslearn.com/'
+class HomePage(BasePage):
+
 
     @property
     def button(self):
